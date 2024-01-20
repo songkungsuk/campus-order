@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".productselect">
+
+    <ImageView
+        android:id="@+id/product_image_cobeti"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="0"
+        tools:srcCompat="@drawable/jeju" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/name_cobeti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:fontFamily="sans-serif-black"
+            android:text="상품명"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/price_cobeti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:fontFamily="sans-serif-black"
+            android:text="가격"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/won_cobeti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:fontFamily="sans-serif-black"
+            android:text="원"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/number_cobeti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="수량"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#000000"/>
+
+        <ImageButton
+            android:id="@+id/minus1_cobeti"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="minus"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/minus_solid_icon" />
+
+        <TextView
+            android:id="@+id/count2_cobeti"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal"
+            android:text="1"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <ImageButton
+            android:id="@+id/plus1_cobeti"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="plus"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/circle_plus_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/shot_layout_cobeti">
+
+        <TextView
+            android:id="@+id/shot_cobeti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="샷추가"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <ImageButton
+            android:id="@+id/minus2_cobeti"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="minus"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/minus_solid_icon" />
+
+        <TextView
+            android:id="@+id/count3_cobeti"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="없음"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <ImageButton
+            android:id="@+id/plus2_cobeti"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="plus"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/circle_plus_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ice_layout_cobeti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ice_cobeti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="얼음"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/on_cobeti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#73B6F1"
+            android:text="있음"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/off_cobeti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#DA6A6A"
+            android:text="없음"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cost_cobeti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="합계"
+            android:textColor="#000000"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/result_cobeti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:gravity="right|center_vertical"
+            android:text="결과값"
+            android:textColor="#000000"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/won2_cobeti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="원"
+            android:textColor="#000000"
+            android:textSize="35dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <Button
+            android:id="@+id/ok_cobeti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="확인"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/cancel_cobeti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="취소"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

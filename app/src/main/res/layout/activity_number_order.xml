@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="매장번호를 입력해주세요"
+        android:textColor="#2196F3"
+        android:textSize="23dp" />
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:ems="15"
+        android:hint="ex) 1 or   1번"
+        android:inputType="textPersonName" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button3"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_ripple"
+        android:enabled="true"
+        android:text="확인"
+        android:textColor="@drawable/txt_color" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button4"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_ripple"
+        android:enabled="true"
+        android:text="취소"
+        android:textColor="@drawable/txt_color" />
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="주문 페이지"
+            android:textSize="30dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/all_menu"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/all" />
+
+                    <ImageView
+                        android:id="@+id/coffee"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/coffee"
+                        android:layout_marginRight="10sp"/>
+
+                    <ImageView
+                        android:id="@+id/drink"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/drink"
+                        android:layout_marginRight="10sp" />
+
+                    <ImageView
+                        android:id="@+id/food"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/food"
+                        android:layout_marginRight="10sp" />
+
+                    <ImageView
+                        android:id="@+id/side_menu"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/side_menu"
+                        android:layout_marginRight="10sp" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:backgroundTint="#76AFD5"
+            android:text="결제하기" />
+
+        <!-- wrap_content : 뷰에 들어 있는 내용물의 크기에 자동으로 맞춘다. -->
+
+        <!-- match_parent : 뷰를 담고 있는 뷰그룹의 여유 공간을 꽉 채운다.
+
+             RecyclerView는 리스트 모양으로 보여줄 수 있는 위젯이다.
+             리싸이클뷰는 기본적으로 상하 스크롤이 가능하지만 좌우 스크롤도 만들 수 있다.
+             왜냐하면 처음 만들어질 때부터 레이아웃을 유연하게 구성할 수 있도록 설계되었기 때문이다. -->
+
+
+    </LinearLayout>
+
+    <!-- 플로팅 버튼 -->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="플로팅버튼"
+        android:src="@drawable/ic_action_cart"
+        app:backgroundTint="#89C2F4"
+        app:elevation="6dp"
+        app:fabSize="normal"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
